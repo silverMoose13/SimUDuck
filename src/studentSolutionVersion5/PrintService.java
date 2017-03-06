@@ -11,7 +11,7 @@ package studentSolutionVersion5;
 public class PrintService {
     
     public void printMessage(String message) {
-        System.out.print(message);
+        System.out.print(message + "\n");
     }
     
 }
