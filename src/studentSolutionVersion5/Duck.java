@@ -9,9 +9,9 @@ package studentSolutionVersion5;
  */
 public interface Duck {
 
-	public abstract void setFlyBehavior(FlyBehavior fb);
+	public abstract void setFlyBehavior(FlyBehavior flyBehavior);
 	
-	public abstract void setQuackBehavior(QuackBehavior qb);
+	public abstract void setQuackBehavior(QuackBehavior quackBehavior);
 	
 	public abstract void display();
 	
