@@ -9,7 +9,8 @@ public class Squeak implements QuackBehavior {
     }
 
     //not the job of this class to print
-    public void quack() {
+    @Override
+    public final void quack() {
         message.printMessage("Squeak");
     }
 

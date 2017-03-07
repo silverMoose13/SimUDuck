@@ -20,8 +20,11 @@ public class MallardDuck implements Duck {
 
     @Override
     public final void setFlyBehavior(FlyBehavior flyBehavior) {
-        //need validation
-        this.flyBehavior = flyBehavior;
+        if (flyBehavior == null) {
+            throw new IllegalArgumentException("Error: message must not be null.");
+        } else {
+            this.flyBehavior = flyBehavior;
+        }
     }
 
     public final QuackBehavior getQuackBehavior() {
@@ -30,8 +33,11 @@ public class MallardDuck implements Duck {
 
     @Override
     public final void setQuackBehavior(QuackBehavior quackBehavior) {
-        //need validation
-        this.quackBehavior = quackBehavior;
+        if (quackBehavior == null) {
+            throw new IllegalArgumentException("Error: message must not be null.");
+        } else {
+            this.quackBehavior = quackBehavior;
+        }
     }
 
     @Override

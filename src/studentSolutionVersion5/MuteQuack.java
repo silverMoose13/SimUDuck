@@ -9,7 +9,8 @@ public class MuteQuack implements QuackBehavior {
     }
 
     //not the job of this class to print
-    public void quack() {
+    @Override
+    public final void quack() {
         message.printMessage("<< Silence >>");
     }
 

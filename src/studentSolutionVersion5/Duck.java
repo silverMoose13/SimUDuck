@@ -7,6 +7,10 @@ package studentSolutionVersion5;
  * @author jlombardo
  *
  */
+
+//class was converted to an interface so that the DIP could be properly followed
+//in using a pure abstraction
+
 public interface Duck {
 
 	public abstract void setFlyBehavior(FlyBehavior flyBehavior);

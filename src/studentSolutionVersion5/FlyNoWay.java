@@ -9,7 +9,8 @@ public class FlyNoWay implements FlyBehavior {
     }
 
     //it is not the job of this class to print
-    public void fly() {
+    @Override
+    public final void fly() {
         message.printMessage("I can't fly");
     }
 

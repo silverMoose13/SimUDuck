@@ -25,7 +25,11 @@ public class RubberDuck implements Duck {
 
     @Override
     public final void setFlyBehavior(FlyBehavior flyBehavior) {
-        this.flyBehavior = flyBehavior;
+        if (flyBehavior == null) {
+            throw new IllegalArgumentException("Error: message must not be null.");
+        } else {
+            this.flyBehavior = flyBehavior;
+        }
     }
 
     public final QuackBehavior getQuackBehavior() {
@@ -34,7 +38,11 @@ public class RubberDuck implements Duck {
 
     @Override
     public final void setQuackBehavior(QuackBehavior quackBehavior) {
-        this.quackBehavior = quackBehavior;
+        if (quackBehavior == null) {
+            throw new IllegalArgumentException("Error: message must not be null.");
+        } else {
+            this.quackBehavior = quackBehavior;
+        }
     }
 
     @Override

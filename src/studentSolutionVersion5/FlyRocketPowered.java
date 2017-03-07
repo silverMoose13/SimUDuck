@@ -9,7 +9,8 @@ public class FlyRocketPowered implements FlyBehavior {
     }
 
     //not the job of this class to print
-    public void fly() {
+    @Override
+    public final void fly() {
         message.printMessage("I'm flying with a rocket");
     }
 }
